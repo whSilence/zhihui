@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.8.0.js"></script>
+	<script src="js/city.min.js"></script>
+	<script src="js/layer.js"></script>
+	<script type="text/javascript"  src="js/jquery.raty.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script class="resources library" src="js/area.js" type="text/javascript"></script>
+	<title>商城下单界面</title>
+</head>
+<body>
+	<div class="wrap">
+        <div class="main" id="home">
+        	<!-- 新闻中心页头 -->
+        	<div id="header">
+        		<div class="header_top">
+        			<div class="common_width clearfix">
+        				<p class="header_title">您好，欢迎您来到安徽智慧乐生活家政管理有限公司！ 您身边的家政服务专家！</p>
+        				<div class="loginbar"><a href="#">登录</a>  |  <a href="#">注册</a>  |  我的预约</div>
+        			</div>
+        		</div>
+        		<div class="nav common_width clearfix">
+        			<img src="imgs/logo.gif" alt="智慧乐" class="logo_img">
+        			<div class="nav_title">
+        				<ul class="clearfix">
+	        				<li><a href="">首页</a></li>
+	        				<li><a href="">新闻中心</a></li>
+	        				<li><a href="">服务项目</a></li>
+	        				<li><a href="">积分商城</a></li>
+	        				<li><a href="">培训学院</a></li>
+	        				<li><a href="">招商加盟</a></li>
+	        				<li><a href="">联系我们</a></li>
+        				</ul>
+        			</div>
+        			<div class="pre_order">
+        				<a href="">立即下单</a><a href="">快速预约</a>
+        			</div>
+        		</div>
+        	</div>
+			<div class="common_width">
+				<h3 class="buy_cart">购物车</h3>
+				<div class="buy_all">
+					<span class="all_shop">全部商品 ( 3 )</span>
+				</div>
+				<table class="goods_table buy_cart_table">
+						<tr>
+							<th width="50"><input type="checkbox" class="all_check" id="all_check" /><label for="all_check" class="all_label">全选</label></th>
+							<th width="300">商品信息</th>
+							<th width="150">&nbsp;</th>
+							<th width="100">单价</th>
+							<th width="120">数量</th>
+							<th width="110">金额</th>
+							<th width="170">操作</th>
+						</tr>
+						<tr class="goods_tr">
+							<td valign="top" class="first_td"><input type="checkbox"></td>
+							<td valign="top clearfix">
+								<div class="goods_img buy_all_img fl">
+									<img src="imgs/1.jpg" alt="">
+								</div>
+								<h3 class="goods_title fl"><a href="">茶花收纳箱塑料大号小玩具衣服衣物储物箱箱子透明百纳箱整理箱</a></h3>
+							</td>
+							<td valign="top" class="change_td" >
+									<div class="buy_cart_p">
+										<div class="shop_spec">
+											<p>颜色：白色</p>
+											<p>尺寸：L</p>
+										</div>
+										<span class="shop_change">修改</span>
+										<div class="buy_info_change">
+											<div class="buy_info_box">
+												<img src="imgs/pic_7.png" alt="">
+												<dl class="change_info clearfix">
+													<dt>尺寸：</dt>
+													<dd>
+														<ul class="change_info_ul clearfix">
+															<li class="change_li">S</li>
+															<li class="change_li">M</li>
+															<li class="change_li">L</li>
+															<li class="change_li">XL</li>
+															<li class="change_li">XXL</li>
+															<li class="change_li">XXXL</li>
+														</ul>
+													</dd>
+												</dl>
+												<dl class="change_info clearfix">
+													<dt>颜色分类：</dt>
+													<dd>
+														<ul class="change_info_ul clearfix">
+															<li class="change_li">白色</li>
+															<li class="change_li">红色</li>
+															<li class="change_li">黑色</li>
+															<li class="change_li">黄色</li>
+														</ul>
+													</dd>
+												</dl>
+												<div class="change_info_btn clearfix">
+													<button class="change_info_yes">确认</button>
+													<button class="change_info_no">取消</button>
+												</div>
+											</div>
+										</div>
+									</div>
+							</td>
+							<td valign="top">￥<span class="buy_price">49.00</span></td>
+							<td valign="top">
+								<div class="goods_cart">
+									<input class="min" name="" type="button" value="-" />
+									<input class="text_box" name="" type="text" value="1" />
+									<input class="add" name="" type="button" value="+" />
+								</div>
+							</td>
+							<td valign="top"><em class="yen">￥</em><span class="total"></span></td>
+							<td valign="top" class="last_td">
+								<span class="favorite">移入收藏夹</span>
+								<span class="shop_delete">删除</span>
+							</td>
+						</tr>
+						<tr class="goods_tr">
+							<td valign="top" class="first_td" ><input type="checkbox" /></td>
+							<td valign="top clearfix">
+								<div class="goods_img buy_all_img fl">
+									<img src="imgs/1.jpg" alt="">
+								</div>
+								<h3 class="goods_title fl"><a href="">茶花收纳箱塑料大号小玩具衣服衣物储物箱箱子透明百纳箱整理箱</a></h3>
+							</td>
+							<td valign="top" class="change_td">
+								<div class="buy_cart_p">
+									<div class="shop_spec">
+										<p>颜色：白色</p>
+										<p>尺寸：L</p>
+									</div>
+									<span class="shop_change">修改</span>
+									<div class="buy_info_change">
+										<div class="buy_info_box">
+											<img src="imgs/pic_7.png" alt="">
+											<dl class="change_info clearfix">
+												<dt>尺寸：</dt>
+												<dd>
+													<ul class="change_info_ul clearfix">
+														<li class="change_li">S</li>
+														<li class="change_li">M</li>
+														<li class="change_li">L</li>
+														<li class="change_li">XL</li>
+														<li class="change_li">XXL</li>
+														<li class="change_li">XXXL</li>
+													</ul>
+												</dd>
+											</dl>
+											<dl class="change_info clearfix">
+												<dt>颜色分类：</dt>
+												<dd>
+													<ul class="change_info_ul clearfix">
+														<li class="change_li">白色</li>
+														<li class="change_li">红色</li>
+														<li class="change_li">黑色</li>
+														<li class="change_li">黄色</li>
+													</ul>
+												</dd>
+											</dl>
+											<div class="change_info_btn clearfix">
+												<button class="change_info_yes">确认</button>
+												<button class="change_info_no">取消</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td valign="top">￥<span class="buy_price">49.00</span></td>
+							<td valign="top">
+								<div class="goods_cart">
+									<input class="min" name="" type="button" value="-" />
+									<input class="text_box" name="" type="text" value="1" />
+									<input class="add" name="" type="button" value="+" />
+								</div>
+							</td>
+							<td valign="top"><em class="yen">￥</em><span class="total"></span></td>
+							<td valign="top" class="last_td">
+								<span class="favorite">移入收藏夹</span>
+								<span class="shop_delete">删除</span>
+							</td>
+						</tr>
+                        <tr class="goods_tr">
+                        <td valign="top" class="first_td" ><input type="checkbox" /></td>
+                        <td valign="top clearfix">
+                            <div class="goods_img buy_all_img fl">
+                                <img src="imgs/1.jpg" alt="">
+                            </div>
+                            <h3 class="goods_title fl"><a href="">茶花收纳箱塑料大号小玩具衣服衣物储物箱箱子透明百纳箱整理箱</a></h3>
+                        </td>
+                        <td valign="top" class="change_td">
+                            <div class="buy_cart_p">
+                                <div class="shop_spec">
+                                    <p>颜色：白色</p>
+                                    <p>尺寸：L</p>
+                                </div>
+                                <span class="shop_change">修改</span>
+                                <div class="buy_info_change">
+                                    <div class="buy_info_box">
+                                        <img src="imgs/pic_7.png" alt="">
+                                        <dl class="change_info clearfix">
+                                            <dt>尺寸：</dt>
+                                            <dd>
+                                                <ul class="change_info_ul clearfix">
+                                                    <li class="change_li">S</li>
+                                                    <li class="change_li">M</li>
+                                                    <li class="change_li">L</li>
+                                                    <li class="change_li">XL</li>
+                                                    <li class="change_li">XXL</li>
+                                                    <li class="change_li">XXXL</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="change_info clearfix">
+                                            <dt>颜色分类：</dt>
+                                            <dd>
+                                                <ul class="change_info_ul clearfix">
+                                                    <li class="change_li">白色</li>
+                                                    <li class="change_li">红色</li>
+                                                    <li class="change_li">黑色</li>
+                                                    <li class="change_li">黄色</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <div class="change_info_btn clearfix">
+                                            <button class="change_info_yes">确认</button>
+                                            <button class="change_info_no">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td valign="top">￥<span class="buy_price">49.00</span></td>
+                        <td valign="top">
+                            <div class="goods_cart">
+                                <input class="min" name="" type="button" value="-" />
+                                <input class="text_box" name="" type="text" value="1" />
+                                <input class="add" name="" type="button" value="+" />
+                            </div>
+                        </td>
+                        <td valign="top"><em class="yen">￥</em><span class="total"></span></td>
+                        <td valign="top" class="last_td">
+                            <span class="favorite">移入收藏夹</span>
+                            <span class="shop_delete">删除</span>
+                        </td>
+                    </tr>
+					</table>
+				<div class="buy_all_cart clearfix">
+					<div class="buy_all_cart_l fl">
+						<div class="buy_all_label fl clearfix">
+							<input type="checkbox" id="check2" name="" />
+							<label for="check2">全选</label>
+						</div>
+						<div class="fl "><span class="shop_buy_delete shop_delete">删除</span><span>移入收藏夹</span></div>
+					</div>
+					<div class="buy_all_cart_r fr">
+						<ul class="clearfix">
+                            <li>已选商品 <span class="cart_number">0</span> 件 </li>
+							<li class="buy_all_total">合计（不含运费）：<span class="all_total">0.00</span></li>
+							<li><button>结算</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="hr_76"></div>
+    </div>
+    <div id="footer">
+    	<div class="common_width footer">
+    		<div class="hr_23"></div>
+    		<form action="" class="footer_nav">
+    			<table border="0">
+					<tr>
+						<th>家庭服务</th>
+						<th>家政师</th>
+						<th>培训学院</th>
+						<th>个人中心</th>
+						<th>加入我们</th>
+					</tr>
+					<tr>
+						<td><a href="">家庭保洁</a></td>
+						<td><a href="">月嫂</a></td>
+						<td><a href="">学院简介</a></td>
+						<td><a href="">我的订单</a></td>
+						<td><a href="">招商加盟</a></td>
+					</tr>
+					<tr>
+						<td><a href="">家居保养</a></td>
+						<td><a href="">育婴师</a></td>
+						<td><a href="">培训课程</a></td>
+						<td><a href="">我的积分</a></td>
+						<td><a href="">培训课程</a></td>
+					</tr>
+					<tr>
+						<td><a href="">家电清洗</a></td>
+						<td><a href="">催乳师</a></td>
+						<td><a href="">学院相册</a></td>
+						<td><a href="">家政预约</a></td>
+						<td><a href="">服务方式</a></td>
+					</tr>
+					<tr>
+						<td><a href="">家居洗涤</a></td>
+						<td><a href="">早教师</a></td>
+						<td><a href="">学院相册</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td><a href="">养老陪护</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td><a href="">居家保姆</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+    		</form>
+    		<div class="qr_code">
+    			<img src="imgs/qr_code.gif" alt="">
+    			<p>扫一扫</p>
+    		</div>
+    	</div>
+    </div>
+
+<script>
+	$(function(){
+		// 全选
+		$('#all_check').click(function() {
+			if($(this).attr('checked') == 'checked'){
+				$('input[type="checkbox"]').attr('checked','checked');
+			}else{
+				$('input[type="checkbox"]').removeAttr('checked','checked');
+			}
+		});
+		$('#check2').click(function() {
+			if($(this).attr('checked') == 'checked'){
+				$('input[type="checkbox"]').attr('checked','checked');
+			}else{
+				$('input[type="checkbox"]').removeAttr('checked','checked');
+			}
+		})
+
+		// 商品修改选择类型
+		$('.change_li').click(function() {
+			$(this).toggleClass('chosen_li').siblings('.change_li').removeClass('chosen_li');
+		});
+
+		//修改订单
+		$('.change_td').hover(function () {
+			$(this).addClass('buy_change').find('.shop_change').show();
+			$(this).find('.shop_change').click(function () {
+				$(this).siblings('.buy_info_change').show();
+			});
+		},function(){
+			$(this).removeClass('buy_change').find('.shop_change').hide();
+			$(this).find('.buy_info_change').hide();
+		});
+
+		//订单修改成功提示层
+		$('.change_info_yes').click(function () {
+			layer.open({
+					icon:1,
+					title:false,
+					content:'订单修改成功。',
+					closeBtn:0,
+					btn:false,
+					time:2000,
+			});
+		});
+
+		//订单修改取消
+		$('.change_info_no').click(function() {
+			$('.buy_info_change').hide();
+			$('.change_li').removeClass('chosen_li');
+		})
+
+
+		//订单删除
+		$('.shop_delete').click(function () {
+			layer.confirm('您确定要删除该订单？', {title:['提示信息！'],
+				btn: ['确定','取消'] //按钮
+			}, function(){
+				layer.msg('该订单已删除', {icon: 1});
+			});
+		});
+
+		//数量增加操作
+		$(".add").click(function(){
+			var t = $(this).siblings('.text_box');
+			t.val(parseInt(t.val())+1);
+			setTotal();
+            setTotalNumber();
+            setTotalMoney();
+		})
+//		//数量减少操作
+		$(".min").click(function(){
+			var t = $(this).siblings('.text_box');
+			if (parseInt(t.val())>0){
+				t.val(parseInt(t.val())-1);
+			}
+			setTotal();
+            setTotalNumber();
+            setTotalMoney();
+        });
+		//计算操作
+		function setTotal() {
+			$('.buy_cart_table .buy_price').each(function(i){
+				var price = parseInt( $('.buy_cart_table .buy_price').eq(i).text() );
+				var num = parseInt( $('.buy_cart_table .text_box').eq(i).val() );
+				$(".total").eq(i).html( price * num );
+			});
+		};
+		setTotal();
+        
+        function setTotalNumber() {
+            var num =  $('.buy_cart_table .text_box');
+            var totalnum = 0;
+            for(var n = 0; n < num.length; n++){
+                totalnum+=parseInt(num.eq(n).val());
+            }
+            $('.cart_number').text(totalnum);
+        }
+        setTotalNumber();
+
+        function setTotalMoney() {
+            var money =  $('.buy_cart_table .total');
+            var totalmoney = 0;
+            for(var n = 0; n < money.length; n++){
+                totalmoney += parseInt(money.eq(n).text());
+            }
+            $('.all_total').text(totalmoney);
+        }
+        setTotalMoney();
+
+		// 地址选择
+		$('.mall_text_p').click(function() {
+			$(this).addClass('mall_text_chosen').siblings('.mall_text_p').removeClass('mall_text_chosen');
+		})
+		// 支付方式
+		$('.payment_type li').click(function() {
+			$(this).addClass('payment_li_bg').removeClass('payment_li');
+			$(this).siblings('.payment_type li').removeClass('payment_li_bg').addClass('payment_li');
+		})
+		// $('.subNav').click(function() {
+		// 	$(this).toggleClass('sub_active');
+		// 	$(this).children('span').toggleClass('nav-title');
+		// 	$(this).siblings('.subNav').children('span').removeClass('nav-title');
+
+		// 	$(this).children('span').toggleClass('nav_active');
+		// 	$(this).siblings('.subNav').children('span').removeClass('nav_active');
+
+		// 	$(this).siblings('.subNav').removeClass('sub_active');
+		// 	$(this).next(".navContent").slideToggle(300).siblings(".navContent").slideUp(500);
+		// });
+
+		// $('.navContent li').click(function() {
+		// 	$(this).addClass('sub_active').children('a').addClass('nav_shop_active').removeClass('nav_shop');
+		// 	$(this).siblings('li').removeClass('sub_active').children('a').removeClass('nav_shop_active').addClass('nav_shop');
+		// });
+
+	})
+</script>
+</body>
+</html>
